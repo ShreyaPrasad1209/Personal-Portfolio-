@@ -169,7 +169,7 @@ header table {
     background-repeat:no-repeat;
 }
 #work {
-    width:92vw;
+    width:95vw;
     padding:6vh 4vw;
     font-weight:bold;
 }
@@ -178,20 +178,18 @@ header table {
     border-bottom:4px solid rgb(255, 44, 90);
     width:6%;
 }
-#photos {
+#videos {
     width:100%;
-    columns:3;
-    column-gap:4%;
-    z-index:1;
+    columns:2;
     transition:0.4s ease-in-out;
 }
-#photos img {
+#videos div {
     width:100%;
     height:auto;
     margin:4.5% 0px;
     transition:0.4s ease-in-out;
 }
-#photos img:hover {
+#videos div:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -304,14 +302,14 @@ button:focus {
 }
 
 @media (max-width: 1000px){
-    #photos {
+    #videos {
     columns:1;
     column-gap:0%;
     }
-    #photos img {
+    #videos img {
         margin:2% 0px;
     }
-    #photos img:hover {
+    #videos img:hover {
         transform: scale(1);
         cursor: pointer;
     }
