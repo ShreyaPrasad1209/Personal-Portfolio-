@@ -34,7 +34,7 @@
     <table id="top_part">
         <tr>
             <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
-                <h1>Software Developer | Technical Speaker</h1>
+                <h1 id="app">Software Developer | Technical Speaker</h1>
                 <button class="btn_one">Download my resume!</button><br>
                 <table>
                     <tr>
@@ -117,8 +117,33 @@
             </table>
     </div>
     <div id="footer">
-        Made on earth by a human <br> <a href="https://imfunniee.github.io">imfunniee</a>
+        Made on earth by a human named <br><a>Shreya Prasad</a>
     </div>
     <script src="index.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <script>
+        var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  .pauseFor(2500)
+  .typeString('I am a  ')
+  .pauseFor(300)
+  .deleteChars(1)
+  .typeString('<strong>Software Developer</strong>')
+  .deleteChars(18)
+  .typeString('<strong> <span style="color: red;">GitHub Campus Expert</span> </strong>')
+  .deleteChars(21)
+  .typeString('<strong><span style="color: yellow;">JavaScript Developer Intern</span> at Steamlabs</strong>')
+  .deleteChars(40)
+  .typeString('<strong>Mentor at <span style="color: #e73427">Major</span>  <span style="color: #1d539f"> League </span> <span style="color: #f8b92a"> Hacking </span> </strong>')
+  .pauseFor(1000)
+  .start();
+    </script>
 </body>
 </html>
